@@ -133,6 +133,8 @@ And change Jest config for tests:
 }
 ```
 
+Keep in mind, that to support both SWC and TSX compilators you will need to apply same "path" config options to `.swcrc` and `tsconfig.json` files.
+
 ## Pagination
 Pagination is available for all endpoints that return an array of objects. The default page size is 10. You can change the default page size by setting the `DEFAULT_PAGE_SIZE` environment variable.
 We are using the [nestjs-prisma-pagination](https://www.npmjs.com/package/@nodeteam/nestjs-prisma-pagination) library for pagination.
